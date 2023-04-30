@@ -1,0 +1,12 @@
+<script>
+    let protocal = window.location.protocol;
+    let host = window.location.hostname;
+    let pathName = window.location.pathname;
+    console.log(pathName);
+    if((pathName == "/email-sender/index.html") || (pathName == "/email-sender/")){
+        window.location.href = protocal+'//'+host+'/email-sender/view/index.php';
+    }
+    else{
+        window.location.href = protocal+'//'+host+'/view/index.php';
+    }
+</script>
